@@ -112,8 +112,6 @@
 		516A283519A1336900644430 /* PO Bingo */ = {
 			isa = PBXGroup;
 			children = (
-				516A283E19A1336900644430 /* THAppDelegate.h */,
-				516A283F19A1336900644430 /* THAppDelegate.m */,
 				516A284119A1336900644430 /* Main.storyboard */,
 				516A284419A1336900644430 /* THViewController.h */,
 				516A284519A1336900644430 /* THViewController.m */,
@@ -126,6 +124,8 @@
 		516A283619A1336900644430 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				516A283E19A1336900644430 /* THAppDelegate.h */,
+				516A283F19A1336900644430 /* THAppDelegate.m */,
 				516A283719A1336900644430 /* PO Bingo-Info.plist */,
 				516A283819A1336900644430 /* InfoPlist.strings */,
 				516A283B19A1336900644430 /* main.m */,
@@ -457,6 +457,7 @@
 				516A286019A1336900644430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		516A286119A1336900644430 /* Build configuration list for PBXNativeTarget "PO BingoTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +466,7 @@
 				516A286319A1336900644430 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface THViewController : UIViewController
+- (IBAction)buttonPressed;
 
 @end
