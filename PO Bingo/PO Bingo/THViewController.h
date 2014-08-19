@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface THViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *sloganLabel;
 - (IBAction)buttonPressed;
 
 @end

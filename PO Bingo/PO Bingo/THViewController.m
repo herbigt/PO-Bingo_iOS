@@ -27,7 +27,7 @@
 }
 
 - (IBAction)buttonPressed {
-    NSLog(@"Button Pressed");
+    self.sloganLabel.text = @"YES";
 }
 
 
