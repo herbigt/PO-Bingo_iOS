@@ -10,6 +10,7 @@
 
 @interface THViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *sloganLabel;
+@property (strong, nonatomic) NSArray *slogans;
 - (IBAction)buttonPressed;
 
 @end
