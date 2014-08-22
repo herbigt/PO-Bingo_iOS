@@ -29,8 +29,8 @@
 }
 
 - (IBAction)buttonPressed {
-    
-    self.sloganLabel.text = [self.slogans objectAtIndex:3];
+    int random = arc4random_uniform(self.slogans.count);
+    self.sloganLabel.text = [self.slogans objectAtIndex:random];
 }
 
 
