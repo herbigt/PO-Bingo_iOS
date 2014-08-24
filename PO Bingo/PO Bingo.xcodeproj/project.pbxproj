@@ -21,6 +21,7 @@
 		516A285119A1336900644430 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516A283319A1336900644430 /* UIKit.framework */; };
 		516A285919A1336900644430 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 516A285719A1336900644430 /* InfoPlist.strings */; };
 		516A285B19A1336900644430 /* PO_BingoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A285A19A1336900644430 /* PO_BingoTests.m */; };
+		517A87AC19AA022B00DA5BCD /* THPOBingo.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A87AB19AA022B00DA5BCD /* THPOBingo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		516A285619A1336900644430 /* PO BingoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PO BingoTests-Info.plist"; sourceTree = "<group>"; };
 		516A285819A1336900644430 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		516A285A19A1336900644430 /* PO_BingoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PO_BingoTests.m; sourceTree = "<group>"; };
+		517A87AA19AA022B00DA5BCD /* THPOBingo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPOBingo.h; sourceTree = "<group>"; };
+		517A87AB19AA022B00DA5BCD /* THPOBingo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPOBingo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				516A284519A1336900644430 /* THViewController.m */,
 				516A284719A1336900644430 /* Images.xcassets */,
 				516A283619A1336900644430 /* Supporting Files */,
+				517A87AA19AA022B00DA5BCD /* THPOBingo.h */,
+				517A87AB19AA022B00DA5BCD /* THPOBingo.m */,
 			);
 			path = "PO Bingo";
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517A87AC19AA022B00DA5BCD /* THPOBingo.m in Sources */,
 				516A284619A1336900644430 /* THViewController.m in Sources */,
 				516A284019A1336900644430 /* THAppDelegate.m in Sources */,
 				516A283C19A1336900644430 /* main.m in Sources */,

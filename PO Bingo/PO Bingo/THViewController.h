@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class THPOBingo;
+
 @interface THViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *sloganLabel;
-@property (strong, nonatomic) NSArray *slogans;
+@property (strong, nonatomic) THPOBingo *poBingo;
 - (IBAction)buttonPressed;
 
 @end
