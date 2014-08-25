@@ -23,10 +23,16 @@
                                 <color key="textColor" red="0.37254902719999999" green="0.81176477670000002" blue="0.50196081400000003" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hy-g1-jfH">
-                                <rect key="frame" x="20" y="461" width="280" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hy-g1-jfH">
+                                <rect key="frame" x="20" y="501" width="280" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.37254902719999999" green="0.81176477670000002" blue="0.50196081400000003" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="5GR-xm-j9c"/>
+                                    <constraint firstAttribute="width" constant="280" id="Cui-yz-PFJ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="47" id="P7P-Cy-0D1"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="dmR-Pk-Qil"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="Give me another one!">
@@ -38,6 +44,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="8hy-g1-jfH" secondAttribute="centerX" id="1Om-na-8P7"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="8hy-g1-jfH" secondAttribute="bottom" constant="20" id="dPE-l1-0tR"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="sloganLabel" destination="waI-qf-DPz" id="5x2-ab-EkV"/>
