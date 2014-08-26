@@ -31,6 +31,20 @@
     self.sloganLabel.text = [self.poBingo randomSlogan];
 }
 
+- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    self.sloganLabel.text = nil;
+}
+
+- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if ( motion == UIEventSubtypeMotionShake) {
+        self.sloganLabel.text = [self.poBingo randomSlogan];
+    }
+}
+
+- (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    NSLog(@"motion cancelled");
+}
+
 
 @end
 
