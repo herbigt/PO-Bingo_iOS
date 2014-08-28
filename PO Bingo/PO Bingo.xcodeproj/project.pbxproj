@@ -22,6 +22,8 @@
 		516A285919A1336900644430 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 516A285719A1336900644430 /* InfoPlist.strings */; };
 		516A285B19A1336900644430 /* PO_BingoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 516A285A19A1336900644430 /* PO_BingoTests.m */; };
 		517A87AC19AA022B00DA5BCD /* THPOBingo.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A87AB19AA022B00DA5BCD /* THPOBingo.m */; };
+		517A87AE19AFB04800DA5BCD /* ZONK.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 517A87AD19AFB04800DA5BCD /* ZONK.mp3 */; };
+		517A87B019AFB0A100DA5BCD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517A87AF19AFB0A100DA5BCD /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		516A285A19A1336900644430 /* PO_BingoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PO_BingoTests.m; sourceTree = "<group>"; };
 		517A87AA19AA022B00DA5BCD /* THPOBingo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THPOBingo.h; sourceTree = "<group>"; };
 		517A87AB19AA022B00DA5BCD /* THPOBingo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPOBingo.m; sourceTree = "<group>"; };
+		517A87AD19AFB04800DA5BCD /* ZONK.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ZONK.mp3; sourceTree = "<group>"; };
+		517A87AF19AFB0A100DA5BCD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517A87B019AFB0A100DA5BCD /* AudioToolbox.framework in Frameworks */,
 				516A283219A1336900644430 /* CoreGraphics.framework in Frameworks */,
 				516A283419A1336900644430 /* UIKit.framework in Frameworks */,
 				516A283019A1336900644430 /* Foundation.framework in Frameworks */,
@@ -104,6 +109,7 @@
 		516A282E19A1336900644430 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				517A87AF19AFB0A100DA5BCD /* AudioToolbox.framework */,
 				516A282F19A1336900644430 /* Foundation.framework */,
 				516A283119A1336900644430 /* CoreGraphics.framework */,
 				516A283319A1336900644430 /* UIKit.framework */,
@@ -119,6 +125,7 @@
 				516A284419A1336900644430 /* THViewController.h */,
 				516A284519A1336900644430 /* THViewController.m */,
 				516A284719A1336900644430 /* Images.xcassets */,
+				517A87AD19AFB04800DA5BCD /* ZONK.mp3 */,
 				516A283619A1336900644430 /* Supporting Files */,
 				517A87AA19AA022B00DA5BCD /* THPOBingo.h */,
 				517A87AB19AA022B00DA5BCD /* THPOBingo.m */,
@@ -234,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517A87AE19AFB04800DA5BCD /* ZONK.mp3 in Resources */,
 				516A284819A1336900644430 /* Images.xcassets in Resources */,
 				516A283A19A1336900644430 /* InfoPlist.strings in Resources */,
 				516A284319A1336900644430 /* Main.storyboard in Resources */,

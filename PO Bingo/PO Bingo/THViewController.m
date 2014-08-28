@@ -8,16 +8,26 @@
 
 #import "THViewController.h"
 #import "THPOBingo.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface THViewController ()
 
 @end
 
-@implementation THViewController
+@implementation THViewController {
+    SystemSoundID soundEffect;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"ZONK"
+                                                          ofType:@"mp3"];
+    NSURL *soundURL = [NSURL fileURLWithPath:soundPath];
+    AudioServicesCreateSystemSoundID(CFBridgingRetain(soundURL), &soundEffect);
+    
+    
     self.poBingo = [[THPOBingo alloc] init];
 }
 
@@ -29,6 +39,7 @@
 
 - (IBAction)buttonPressed {
     self.sloganLabel.text = [self.poBingo randomSlogan];
+    AudioServicesPlaySystemSound(soundEffect);
 }
 
 - (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
@@ -38,6 +49,7 @@
 - (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     if ( motion == UIEventSubtypeMotionShake) {
         self.sloganLabel.text = [self.poBingo randomSlogan];
+        AudioServicesPlaySystemSound(soundEffect);
     }
 }
 
