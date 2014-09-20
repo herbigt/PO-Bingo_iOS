@@ -24,6 +24,7 @@
 		517A87AC19AA022B00DA5BCD /* THPOBingo.m in Sources */ = {isa = PBXBuildFile; fileRef = 517A87AB19AA022B00DA5BCD /* THPOBingo.m */; };
 		517A87AE19AFB04800DA5BCD /* ZONK.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 517A87AD19AFB04800DA5BCD /* ZONK.mp3 */; };
 		517A87B019AFB0A100DA5BCD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517A87AF19AFB0A100DA5BCD /* AudioToolbox.framework */; };
+		C5FADDCD19CE0D8500B80F7A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FADDCC19CE0D8500B80F7A /* NotificationCenter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		517A87AB19AA022B00DA5BCD /* THPOBingo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THPOBingo.m; sourceTree = "<group>"; };
 		517A87AD19AFB04800DA5BCD /* ZONK.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ZONK.mp3; sourceTree = "<group>"; };
 		517A87AF19AFB0A100DA5BCD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C5FADDCC19CE0D8500B80F7A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FADDCD19CE0D8500B80F7A /* NotificationCenter.framework in Frameworks */,
 				517A87B019AFB0A100DA5BCD /* AudioToolbox.framework in Frameworks */,
 				516A283219A1336900644430 /* CoreGraphics.framework in Frameworks */,
 				516A283419A1336900644430 /* UIKit.framework in Frameworks */,
@@ -109,6 +112,7 @@
 		516A282E19A1336900644430 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5FADDCC19CE0D8500B80F7A /* NotificationCenter.framework */,
 				517A87AF19AFB0A100DA5BCD /* AudioToolbox.framework */,
 				516A282F19A1336900644430 /* Foundation.framework */,
 				516A283119A1336900644430 /* CoreGraphics.framework */,
