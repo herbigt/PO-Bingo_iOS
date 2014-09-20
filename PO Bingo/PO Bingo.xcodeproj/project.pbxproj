@@ -25,6 +25,10 @@
 		517A87AE19AFB04800DA5BCD /* ZONK.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 517A87AD19AFB04800DA5BCD /* ZONK.mp3 */; };
 		517A87B019AFB0A100DA5BCD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 517A87AF19AFB0A100DA5BCD /* AudioToolbox.framework */; };
 		C5FADDCD19CE0D8500B80F7A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FADDCC19CE0D8500B80F7A /* NotificationCenter.framework */; };
+		C5FADDD319CE0E6700B80F7A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FADDCC19CE0D8500B80F7A /* NotificationCenter.framework */; };
+		C5FADDD919CE0E6700B80F7A /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FADDD819CE0E6700B80F7A /* TodayViewController.m */; };
+		C5FADDDB19CE0E6800B80F7A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FADDDA19CE0E6800B80F7A /* MainInterface.storyboard */; };
+		C5FADDDE19CE0E6800B80F7A /* POBingoWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C5FADDD219CE0E6700B80F7A /* POBingoWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,35 @@
 			remoteGlobalIDString = 516A282B19A1336900644430;
 			remoteInfo = "PO Bingo";
 		};
+		C5FADDDC19CE0E6800B80F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 516A282419A1336900644430 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5FADDD119CE0E6700B80F7A;
+			remoteInfo = POBingoWidget;
+		};
+		C5FADDDF19CE0E6800B80F7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 516A282419A1336900644430 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5FADDD119CE0E6700B80F7A;
+			remoteInfo = POBingoWidget;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C5FADDE419CE0E6800B80F7A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C5FADDDE19CE0E6800B80F7A /* POBingoWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		516A282C19A1336900644430 /* PO Bingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PO Bingo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +94,11 @@
 		517A87AD19AFB04800DA5BCD /* ZONK.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ZONK.mp3; sourceTree = "<group>"; };
 		517A87AF19AFB0A100DA5BCD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C5FADDCC19CE0D8500B80F7A /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		C5FADDD219CE0E6700B80F7A /* POBingoWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = POBingoWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FADDD619CE0E6700B80F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FADDD719CE0E6700B80F7A /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		C5FADDD819CE0E6700B80F7A /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		C5FADDDA19CE0E6800B80F7A /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +124,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5FADDCF19CE0E6700B80F7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5FADDD319CE0E6700B80F7A /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -95,6 +140,7 @@
 			children = (
 				516A283519A1336900644430 /* PO Bingo */,
 				516A285419A1336900644430 /* PO BingoTests */,
+				C5FADDD419CE0E6700B80F7A /* POBingoWidget */,
 				516A282E19A1336900644430 /* Frameworks */,
 				516A282D19A1336900644430 /* Products */,
 			);
@@ -105,6 +151,7 @@
 			children = (
 				516A282C19A1336900644430 /* PO Bingo.app */,
 				516A284D19A1336900644430 /* PO BingoTests.xctest */,
+				C5FADDD219CE0E6700B80F7A /* POBingoWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +215,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C5FADDD419CE0E6700B80F7A /* POBingoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C5FADDD719CE0E6700B80F7A /* TodayViewController.h */,
+				C5FADDD819CE0E6700B80F7A /* TodayViewController.m */,
+				C5FADDDA19CE0E6800B80F7A /* MainInterface.storyboard */,
+				C5FADDD519CE0E6700B80F7A /* Supporting Files */,
+			);
+			path = POBingoWidget;
+			sourceTree = "<group>";
+		};
+		C5FADDD519CE0E6700B80F7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5FADDD619CE0E6700B80F7A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -178,10 +244,13 @@
 				516A282819A1336900644430 /* Sources */,
 				516A282919A1336900644430 /* Frameworks */,
 				516A282A19A1336900644430 /* Resources */,
+				C5FADDE419CE0E6800B80F7A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C5FADDDD19CE0E6800B80F7A /* PBXTargetDependency */,
+				C5FADDE019CE0E6800B80F7A /* PBXTargetDependency */,
 			);
 			name = "PO Bingo";
 			productName = "PO Bingo";
@@ -206,6 +275,23 @@
 			productReference = 516A284D19A1336900644430 /* PO BingoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C5FADDD119CE0E6700B80F7A /* POBingoWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5FADDE119CE0E6800B80F7A /* Build configuration list for PBXNativeTarget "POBingoWidget" */;
+			buildPhases = (
+				C5FADDCE19CE0E6700B80F7A /* Sources */,
+				C5FADDCF19CE0E6700B80F7A /* Frameworks */,
+				C5FADDD019CE0E6700B80F7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = POBingoWidget;
+			productName = POBingoWidget;
+			productReference = C5FADDD219CE0E6700B80F7A /* POBingoWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -218,6 +304,10 @@
 				TargetAttributes = {
 					516A284C19A1336900644430 = {
 						TestTargetID = 516A282B19A1336900644430;
+					};
+					C5FADDD119CE0E6700B80F7A = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 2X9C294JJQ;
 					};
 				};
 			};
@@ -236,6 +326,7 @@
 			targets = (
 				516A282B19A1336900644430 /* PO Bingo */,
 				516A284C19A1336900644430 /* PO BingoTests */,
+				C5FADDD119CE0E6700B80F7A /* POBingoWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +348,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				516A285919A1336900644430 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5FADDD019CE0E6700B80F7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5FADDDB19CE0E6800B80F7A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +381,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C5FADDCE19CE0E6700B80F7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5FADDD919CE0E6700B80F7A /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +396,16 @@
 			isa = PBXTargetDependency;
 			target = 516A282B19A1336900644430 /* PO Bingo */;
 			targetProxy = 516A285219A1336900644430 /* PBXContainerItemProxy */;
+		};
+		C5FADDDD19CE0E6800B80F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5FADDD119CE0E6700B80F7A /* POBingoWidget */;
+			targetProxy = C5FADDDC19CE0E6800B80F7A /* PBXContainerItemProxy */;
+		};
+		C5FADDE019CE0E6800B80F7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5FADDD119CE0E6700B80F7A /* POBingoWidget */;
+			targetProxy = C5FADDDF19CE0E6800B80F7A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -456,6 +573,42 @@
 			};
 			name = Release;
 		};
+		C5FADDE219CE0E6800B80F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = POBingoWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C5FADDE319CE0E6800B80F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = POBingoWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -482,6 +635,15 @@
 			buildConfigurations = (
 				516A286219A1336900644430 /* Debug */,
 				516A286319A1336900644430 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5FADDE119CE0E6800B80F7A /* Build configuration list for PBXNativeTarget "POBingoWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5FADDE219CE0E6800B80F7A /* Debug */,
+				C5FADDE319CE0E6800B80F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
